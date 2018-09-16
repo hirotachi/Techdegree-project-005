@@ -1,0 +1,16 @@
+.search-box{
+    padding: 1rem 1rem;
+    max-width: 500px;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px $color-primary solid;
+    border-radius: 5px;
+
+    &:focus{
+        outline: none;
+    }
+
+    @media (min-width: 769xp){
+        width: 20%;
+    }
+}
