@@ -21,15 +21,17 @@ img {
   width: 100%;
   margin: 1rem 0;
   border: 1px #eee solid;
-  border-radius: 5px; }
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  font-size: 1rem; }
   .search-box:focus {
     outline: none; }
   @media (min-width: 769xp) {
     .search-box {
       width: 20%; } }
 
-.fancybox-image {
-  max-height: 680px; }
+p {
+  display: none; }
 
 .container {
   margin: 0 auto;

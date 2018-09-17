@@ -1,3 +1,7 @@
-$(".img").fancybox();
+const $searchBox = $(".search-box");
+const $img = $(".img");
 
-$(".img").attr("data-width", "auto");
+
+$img.fancybox();
+
+
