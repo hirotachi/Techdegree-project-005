@@ -17,3 +17,7 @@ $searchBox.on('keyup', function() {
 	}
 });
 
+$img.each(function(){
+	$(this).attr("alt", $(this).attr("title"));
+});
+
