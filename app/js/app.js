@@ -5,7 +5,7 @@ const $img = $(".img");
 $img.fancybox();
 
 
-$searchBox.on('keypress', function() {
+$searchBox.on('keyup', function() {
 	var searchVal = $(this).val();
 	var filterItems = $img;
 
@@ -16,3 +16,4 @@ $searchBox.on('keypress', function() {
 		filterItems.removeClass('hidden');
 	}
 });
+
