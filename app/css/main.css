@@ -30,9 +30,6 @@ img {
     .search-box {
       width: 20%; } }
 
-p {
-  display: none; }
-
 .container {
   margin: 0 auto;
   max-width: 1200px; }
@@ -41,7 +38,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: .5rem;
-  transition: 1s; }
+  transition: 1s;
+  justify-content: center; }
   @media (min-width: 768px) {
     .grid {
       grid-template-columns: repeat(4, 1fr);
@@ -50,3 +48,6 @@ p {
     .grid {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 2rem; } }
+
+.hidden {
+  display: none; }

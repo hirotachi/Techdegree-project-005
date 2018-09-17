@@ -5,3 +5,14 @@ const $img = $(".img");
 $img.fancybox();
 
 
+$searchBox.on('keypress', function() {
+	var searchVal = $(this).val();
+	var filterItems = $img;
+
+	if ( searchVal != '' ) {
+		filterItems.addClass('hidden');
+		$(`[data-filter-item][data-caption*="${searchVal.toLowerCase()}"]`).removeClass('hidden');
+	} else {
+		filterItems.removeClass('hidden');
+	}
+});
